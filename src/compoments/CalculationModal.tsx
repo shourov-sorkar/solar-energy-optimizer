@@ -43,7 +43,7 @@ export const CalculationModal: FC<CalculationModalProps> = ({
     
     setIsLoading(true);
     try {
-      const response = await axios.post("/api/predict", {
+      const response = await axios.post("/predict", {
         battery_capacity,
         hourly_consumption,
         current_charge,
